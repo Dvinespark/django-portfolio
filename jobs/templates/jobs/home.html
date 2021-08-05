@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio</title>
+	</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<body>
+		<main>
+			<div>
+				<h3>All my Jobs are here</h3>
+			</div>
+			<div class="jobs">
+				{% for job in jobs %}
+					{{ job.summary }}
+				{% endfor %}
+			</div>
+		</main>
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
